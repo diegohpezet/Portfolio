@@ -3,6 +3,7 @@ import IconUser from '../assets/icons/IconUser.vue';
 import IconProjects from '../assets/icons/IconProjects.vue';
 import IconContact from '../assets/icons/IconContact.vue';
 
+import AboutSection from './AboutSection.vue';
 import ProjectSection from './ProjectSection.vue';
 import ContactSection from './ContactSection.vue';
 
@@ -13,7 +14,7 @@ onMounted(() => { initTabs(); });
 </script>
 
 <template>
-  <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+  <div class="my-4 border-b border-gray-200 dark:border-gray-700">
     <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab"
       data-tabs-toggle="#default-styled-tab-content"
       data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500"
@@ -49,10 +50,7 @@ onMounted(() => { initTabs(); });
   <div id="default-styled-tab-content">
     <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel"
       aria-labelledby="profile-tab">
-      <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
-          class="font-medium text-gray-800 dark:text-white">Profile tab's associated content</strong>. Clicking
-        another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to
-        control the content visibility and styling.</p>
+      <AboutSection />
     </div>
     <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-dashboard" role="tabpanel"
       aria-labelledby="dashboard-tab">
