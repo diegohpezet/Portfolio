@@ -14,9 +14,9 @@ import JobInfo from './profile/JobInfo.vue';
         I believe in the power of code to create, transform, and shape the future. Every project I undertake is an
         opportunity to leave a positive impact
       </p>
+      <JobInfo />
     </article>
   </div>
-  <JobInfo />
-
+  
 
 </template>
