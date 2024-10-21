@@ -11,18 +11,19 @@ const sendEmail = async () => {
   const templateID = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
   const userID = import.meta.env.VITE_EMAIL_USER_ID;
 
+  const toastOptions = {
+    autoClose: 2000,
+    theme: document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+  };
+
   const response = await emailjs.sendForm(serviceID, templateID, formRef.value, userID);
 
   const { status } = response;
 
   if (status === 200) {
-    toast.success('Email sent!', {
-      autoClose: 2000
-    });
+    toast.success('Email sent!', toastOptions);
   } else {
-    toast.error('Something went wrong!', {
-      autoClose: 2000
-    });
+    toast.error('Something went wrong!', toastOptions);
   }
 
   formRef.value.reset();
