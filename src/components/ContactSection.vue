@@ -1,5 +1,36 @@
+<script setup>
+import { ref } from 'vue';
+import emailjs from 'emailjs-com';
+import { toast } from 'vue3-toastify';
+import 'vue3-toastify/dist/index.css';
+
+const formRef = ref(null);
+
+const sendEmail = async () => {
+  const serviceID = import.meta.env.VITE_EMAIL_SERVICE_ID;
+  const templateID = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+  const userID = import.meta.env.VITE_EMAIL_USER_ID;
+
+  const response = await emailjs.sendForm(serviceID, templateID, formRef.value, userID);
+
+  const { status } = response;
+
+  if (status === 200) {
+    toast.success('Email sent!', {
+      autoClose: 2000
+    });
+  } else {
+    toast.error('Something went wrong!', {
+      autoClose: 2000
+    });
+  }
+
+  formRef.value.reset();
+};
+</script>
+
 <template>
-  <form>
+  <form ref="formRef" @submit.prevent="sendEmail">
     <div class="grid gap-6 mb-6 md:grid-cols-2">
       <div>
         <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
