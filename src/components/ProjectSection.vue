@@ -1,10 +1,19 @@
+<script setup>
+import { ref, onMounted } from 'vue';
+import ProjectCard from './project/ProjectCard.vue';
+
+const projects = ref([]);
+
+onMounted(async () => {
+  const res = await fetch('src/assets/projectList.json');
+  projects.value = await res.json();
+});
+</script>
+
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     <div class="grid gap-4">
-      <div>
-        <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
-          alt="">
-      </div>
+      <ProjectCard v-for="project in projects" v-bind:key="project.title" v-bind="project" />
       <div>
         <img class="h-auto max-w-full rounded-lg"
           src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">

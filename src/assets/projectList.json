@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Wallet",
+    "description": "Simulates transactions in an e-wallet.",
+    "image": "Wallet.png",
+    "githubUrl": "https://github.com/diegohpezet/Wallet-Laravel",
+    "liveUrl": "https://lightskyblue-camel-764928.hostingersite.com/",
+    "tags": [
+      "Laravel",
+      "Vue",
+      "MySql"
+    ]
+  }
+]
