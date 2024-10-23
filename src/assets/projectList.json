@@ -10,5 +10,28 @@
       "Vue",
       "MySql"
     ]
+  },
+  {
+    "title": "PDI Blog",
+    "description": "A blog I use to teach my students",
+    "image": "PDIBlog.png",
+    "githubUrl": "https://github.com/diegohpezet/PDI-Blog",
+    "liveUrl": "https://pdi-blog.vercel.app/",
+    "tags": [
+      "Astro",
+      "Bootstrap",
+      "Markdown"
+    ]
+  },
+  {
+    "title": "MyNotes",
+    "description": "Simple Notes App",
+    "image": "MyNotes.png",
+    "githubUrl": "https://github.com/diegohpezet/MyNotes",
+    "liveUrl": "https://my-notes-seven-tau.vercel.app/",
+    "tags": [
+      "Nextjs",
+      "Shadui"
+    ]
   }
 ]

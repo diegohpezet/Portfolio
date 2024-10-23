@@ -10,6 +10,15 @@ const props = defineProps({
   liveUrl: String,
   tags: Array
 });
+
+const colorMap = {
+  Nextjs: 'bg-yellow-300',
+  Astro: 'bg-purple-500',
+  Bootstrap: 'bg-blue-500',
+  Laravel: 'bg-red-500',
+  Vue: 'bg-green-500',
+  MySql: 'bg-indigo-500',
+};
 </script>
 
 <template>
@@ -19,12 +28,14 @@ const props = defineProps({
       v-bind:srcset="`src/assets/images/projects/${props.image}`" alt="Project image">
     <div
       class="absolute top-0 right-0 flex flex-wrap px-3 gap-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-3 transition-transform duration-500 ease-in-out ">
-      <button class="rounded-full bg-white dark:bg-gray-800 hover:bg-gray-100 p-1">
+      <a v-bind:href="props.githubUrl"
+        class="rounded-full bg-white dark:bg-gray-800 hover:bg-gray-100 p-1 cursor-pointer">
         <IconCode />
-      </button>
-      <button class="rounded-full bg-white dark:bg-gray-800 hover:bg-gray-100 p-1">
+      </a>
+      <a v-bind:href="props.liveUrl"
+        class="rounded-full bg-white dark:bg-gray-800 hover:bg-gray-100 p-1 cursor-pointer">
         <IconForward />
-      </button>
+      </a>
     </div>
 
     <figcaption
@@ -34,9 +45,8 @@ const props = defineProps({
       </h2>
       <p>{{ props.description }}</p>
       <ul class="flex flex-wrap gap-2 mt-1">
-        <li class="bg-orange-400 text-white px-3 py-1 rounded-lg font-semibold">HTML</li>
-        <li class="bg-blue-400 text-white px-3 py-1 rounded-lg font-semibold">CSS</li>
-        <li class="bg-yellow-300 text-white px-3 py-1 rounded-lg font-semibold">JavaScript</li>
+        <li :class="`${colorMap[tag] || 'bg-gray-400'} text-white px-3 py-1 rounded-lg font-semibold`"
+          v-for="tag in props.tags" v-bind:key="tag">{{ tag }}</li>
       </ul>
     </figcaption>
   </figure>
