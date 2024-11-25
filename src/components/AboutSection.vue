@@ -6,6 +6,11 @@
       experience in both frontend and backend technologies, I build efficient, scalable web applications while also
       sharing my knowledge with aspiring developers.
     </p>
+
+    <figure>
+      <img src="/src/assets/images/teaching.jpeg" class="img-fluid rounded shadow-sm height-auto" alt="Me teaching">
+      <figcaption class="text-sm text-gray-500 dark:text-gray-400">Me teaching programming on my class</figcaption>
+    </figure>
     <br />
     <blockquote class="px-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800">
       <p>
@@ -26,3 +31,9 @@
     </p>
   </article>
 </template>
+
+<style scoped>
+img {
+  filter: contrast(80%);
+}
+</style>
