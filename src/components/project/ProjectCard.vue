@@ -12,8 +12,10 @@ const props = defineProps({
 });
 
 const colorMap = {
+  Javascript: 'bg-yellow-300',
   Nextjs: 'bg-yellow-300',
   Astro: 'bg-purple-500',
+  CSS: 'bg-blue-500',
   Bootstrap: 'bg-blue-500',
   Laravel: 'bg-red-500',
   Vue: 'bg-green-500',

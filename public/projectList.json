@@ -33,5 +33,16 @@
       "Nextjs",
       "Shadui"
     ]
+  },
+  {
+    "title": "Deck'd",
+    "description": "My first e-commerce project",
+    "image": "Deckd.png",
+    "githubUrl": "https://github.com/diegohpezet/eCommerce-Coderhouse-final",
+    "liveUrl": "https://e-commerce-nu-wheat.vercel.app/",
+    "tags": [
+      "Javascript",
+      "CSS"
+    ]
   }
 ]
