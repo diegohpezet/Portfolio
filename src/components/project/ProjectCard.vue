@@ -25,7 +25,7 @@ const colorMap = {
   <figure class="relative h-fit transition-all duration-500 group">
     <img
       class="h-auto max-w-full rounded-lg group-hover:brightness-75 group-hover:-translate-y-3 transition-transform duration-500 ease-in-out"
-      v-bind:srcset="`src/assets/images/projects/${props.image}`" alt="Project image">
+      v-bind:srcset="`/project_images/${props.image}`" alt="Project image">
     <div
       class="absolute top-0 right-0 flex flex-wrap px-3 gap-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-3 transition-transform duration-500 ease-in-out ">
       <a v-bind:href="props.githubUrl"

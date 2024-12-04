@@ -6,7 +6,7 @@ const evenProjects = ref([]);
 const oddProjects = ref([]);
 
 onMounted(async () => {
-  const res = await fetch('src/assets/projectList.json');
+  const res = await fetch('/projectList.json');
   const data = await res.json();
 
   evenProjects.value = data.filter((_, index) => index % 2 === 0);
