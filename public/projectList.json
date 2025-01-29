@@ -1,5 +1,17 @@
 [
   {
+    "title": "Artlog",
+    "description": "A social network meant for artists.",
+    "image": "Artlog.png",
+    "githubUrl": "https://github.com/diegohpezet/artlog-laravel",
+    "liveUrl": "https://chocolate-raccoon-595717.hostingersite.com/",
+    "tags": [
+      "Laravel",
+      "Vue",
+      "MySql"
+    ]
+  },
+  {
     "title": "Wallet",
     "description": "Simulates transactions in an e-wallet.",
     "image": "Wallet.png",
