@@ -12,6 +12,18 @@
     ]
   },
   {
+    "title": "Grades",
+    "description": "App I use to manage my students grades.",
+    "image": "GradeHelper.png",
+    "githubUrl": "https://github.com/diegohpezet/PMov-GradeHelper-Backend",
+    "liveUrl": "https://grades.molotec.com/",
+    "tags": [
+      "Laravel",
+      "Vue",
+      "MySql"
+    ]
+  },
+  {
     "title": "PDI Blog",
     "description": "A blog I use to teach my students",
     "image": "PDIBlog.png",
