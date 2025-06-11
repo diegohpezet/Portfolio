@@ -8,7 +8,9 @@ import IconGithub from '../../assets/icons/IconGithub.vue';
   <ul class="flex flex-wrap justify-center">
     <li class="flex flex-wrap m-3">
       <IconJob class="w-5 h-5 me-2 fill-gray-600 dark:fill-gray-400" />
-      <span class="text-gray-600 dark:text-gray-400">Available</span>
+      <span class="text-gray-600 dark:text-gray-400">
+        <a href="https://www.accenture.com/ar-es" class="hover:text-blue-500">Accenture</a>
+      </span>
     </li>
 
     <li class="flex flex-wrap m-3">
