@@ -7,16 +7,23 @@ import 'vue3-toastify/dist/index.css';
 const formRef = ref(null);
 
 const sendEmail = async () => {
-  const serviceID = import.meta.env.VITE_EMAIL_SERVICE_ID;
-  const templateID = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
-  const userID = import.meta.env.VITE_EMAIL_USER_ID;
-
+  const { 
+    VITE_EMAIL_SERVICE_ID,
+    VITE_EMAIL_TEMPLATE_ID,
+    VITE_EMAIL_USER_ID
+  } = import.meta.env;
+  
   const toastOptions = {
     autoClose: 2000,
     theme: document.documentElement.classList.contains('dark') ? 'dark' : 'light'
   };
 
-  const response = await emailjs.sendForm(serviceID, templateID, formRef.value, userID);
+  const response = await emailjs.sendForm(
+    VITE_EMAIL_SERVICE_ID, 
+    VITE_EMAIL_TEMPLATE_ID, 
+    formRef.value, 
+    VITE_EMAIL_USER_ID
+  );
 
   const { status } = response;
 
