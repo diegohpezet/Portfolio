@@ -2,16 +2,16 @@
   <article class="text-gray-900 dark:text-white text-lg">
     <h2 class="text-4xl font-bold font-sans mb-3">Hi there!</h2>
     <p>
-      I'm a passionate Fullstack Developer and Programming Educator with a deep love for coding and teaching. With
-      experience in both frontend and backend technologies, I build efficient, scalable web applications while also
-      sharing my knowledge with aspiring developers.
+      I'm a dedicated Software Tester and Programming Educator with a deep love for technology and teaching. With
+      experience in both quality assurance and software development, I ensure reliable, high-performing applications
+      while continuing to share my knowledge with aspiring developers.
     </p>
     <br />
     <blockquote class="px-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800">
       <p>
-        As a <strong>developer</strong>, I specialize in creating robust APIs, user-friendly interfaces, and secure
-        systems using frameworks like Laravel and Vue. I constantly challenge myself to learn new tools and stay updated
-        with industry trends.
+        As a <strong>tester</strong>, I specialize in identifying bugs, improving user experience, and maintaining
+        software quality through rigorous testing processes and tools. I stay curious and proactive in learning new
+        testing methodologies and automation frameworks.
       </p>
       <br />
       <p>
